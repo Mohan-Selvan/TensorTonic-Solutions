@@ -6,8 +6,7 @@ def dot_product(x: list, y: list) -> float:
     """
     # Write code here
     sum = 0.0
-    for i in range(len(x)):
-        sum += x[i] * y[i]
-
+    for idx, i in enumerate(x):
+        sum += i * y[idx]
     return sum
     
